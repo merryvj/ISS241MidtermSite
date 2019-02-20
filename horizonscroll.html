@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no">
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    
+
+    
+        <script src="horizonscroll.js-master/jquery.touchSwipe.js"></script>
+        <script src="horizonscroll.js-master/jquery.horizonScroll.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+        <link href="horizonscroll.js-master/css/style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<header  >
+  <a  style="font-size: 24px" href="#section-section1" class="logo"><strong>Mary Jiang</strong> </a>
+  <div class="header-right" id="nav">
+    <a href="#section-section1" data-index="0">About</a>
+    <a href="#section-section2" data-index="1">Assignments</a>
+    <a  href="#section-section3" data-index="2">Blog</a>
+    <a href="#section-section4" data-index="3">Playground</a>
+  </div>
+</header>
+    
+
+<div class="horizon-prev"><img src="designAssets/arrowhead-thin-outline-to-the-left.svg"></div>
+<div class="horizon-next"><img src="designAssets/arrow-point-to-right.svg"></div>
+    
+
+<!--HOME/ABOUT-->
+<section data-role="section" id="section-section1">
+    <div id="genericBox">
+        <div id="typed"></div>
+        <div >
+            <p id="aboutParagraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        
+        </div>
+    
+    
+    </div>
+    
+    
+</section>
+    
+<!--ASSIGNMENTS-->
+<section  data-role="section" id="section-section2">
+    <div class="scrollBox" id="assignments">
+        <div class="assignmentCard">
+            <a data-fancybox data-type="iframe" data-src="assignments/Assignment%202.html" href="javascript:;">
+                Assignment 2
+            </a>
+        </div>
+        
+        <div  class="assignmentCard">
+             <a  data-fancybox data-type="iframe" data-src="assignments/Assignment%203.html" href="javascript:;">
+                Assignment 3
+            </a>
+        
+        </div>
+        
+        <div class="assignmentCard">
+            <a  data-fancybox data-type="iframe" data-src="assignments/dropdown.html" href="javascript:;">
+                Assignment 4
+            </a>
+        </div>
+        
+        <div  class="assignmentCard">
+            <a   data-fancybox data-type="iframe" data-src="assignments/Assignment%205.html" href="javascript:;">
+                Assignment 5
+            </a>
+        
+        </div>
+        
+        <div   class="assignmentCard">
+            <a  data-fancybox data-type="iframe" data-src="assignments/Assignment6.html" href="javascript:;">
+                Assignment 6
+            </a>
+        </div>
+        
+        <div class="assignmentCard">
+            <a   data-fancybox data-type="iframe" data-src="assignments/Assignment7.html" href="javascript:;">
+                Assignment 7
+            </a>
+        
+        
+        </div>
+        <div  class="assignmentCard"></div>
+        <div  class="assignmentCard"></div>
+        
+        </div>
+
+    
+
+</section>
+    
+<!--BLOG-->
+<section   data-role="section" id="section-section3">
+    <div class="scrollBox" id = "blogBox">
+        <div  class="blogCard">
+            <h3> FEBRUARY 2, 2019 </h3>
+            <h2> Assignment 8: Plugin Research </h2> 
+            <a data-fancybox data-type="iframe" data-src="assignments/Assignment8.html" href="javascript:;">
+                <div class="readMore"> READ</div>
+
+            </a>
+        </div>
+
+    
+    
+        </div>
+                
+    
+    
+    
+</section>
+
+<section data-role="section" id="section-section4"></section>
+
+<footer data-role="footer" id="footer"></footer>
+  
+<script type="text/javascript">
+    $('section').horizon();
+    
+    console.log($.fn.horizon.defaults.i);
+    
+    if ($(window).width() < 620 ){
+        
+        $('header a.active').click(function(){
+            
+            $('header a').not('.active').toggle();
+            
+        })
+        
+    
+        
+        
+        
+    }
+    
+    
+
+</script>
+    
+
+    
+<script>
+    var typed = new Typed('#typed', {
+                strings: ['Designer', 'Dancer','Developer'],
+                typeSpeed: 50,
+                backSpeed: 50,
+                backDelay: 500,
+                loop: false,
+                showCursor: false,
+                 
+              });
+    
+    
+</script>
+
+</body>
+</html>
