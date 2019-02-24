@@ -21,7 +21,7 @@
 <body>
 
 <header  >
-  <a  style="font-size: 24px" href="#section-section1" class="logo"><strong>Mary Jiang</strong> </a>
+  <a style="font-size: 24px" href="#section-section1" class="logo"><strong>Mary Jiang</strong> </a>
   <div class="header-right" id="nav">
     <a href="#section-section1" data-index="0">About</a>
     <a href="#section-section2" data-index="1">Assignments</a>
@@ -136,7 +136,7 @@
         
         $('header a.active').click(function(){
             
-            $('header a').not('.active').toggle();
+            $('.header-right').not(this).toggleClass('.active');
             
         })
         

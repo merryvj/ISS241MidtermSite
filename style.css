@@ -151,7 +151,6 @@ h3{
     font-weight: 700;
 }
 
-
 .fancybox-slide--iframe .fancybox-content {
     border-radius: 5px;
 }
@@ -170,6 +169,7 @@ h3{
     .header-right{
         display: flex;
         flex-direction: column;
+        visibility: hidden;
         position:fixed;
         top: 60%;
         left: 50%;
@@ -179,17 +179,20 @@ h3{
         width: 100%;      
     }
     
+    .header-right.active{
+        visibility: visible;
+    }
+    
     
     .header-right a{
         font-size: 1.2em;
     }
 
-    }
     
     header a.active{
         visibility: visible !important;
         position: fixed;
-        top: 97% !important;
+        top: 90% !important;
         left: 50%;
         transform: translateX(-50%);
     }
