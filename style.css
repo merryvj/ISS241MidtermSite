@@ -171,30 +171,31 @@ h3{
         flex-direction: column;
         visibility: hidden;
         position:fixed;
-        top: 60%;
+        top: 55%;
         left: 50%;
         transform: translateX(-50%);
-        padding-top: 5%;
+        padding-top: 10%;
         background: white;
-        width: 100%;      
+        width: 100%;          
     }
     
-    .header-right.active{
+    .activeMobileNav{
         visibility: visible;
     }
     
     
     .header-right a{
         font-size: 1.2em;
+        
     }
 
-    
     header a.active{
         visibility: visible !important;
         position: fixed;
-        top: 90% !important;
+        top: 96% !important;
         left: 50%;
         transform: translateX(-50%);
+        
     }
     
 

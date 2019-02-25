@@ -25,7 +25,7 @@
   <div class="header-right" id="nav">
     <a href="#section-section1" data-index="0">About</a>
     <a href="#section-section2" data-index="1">Assignments</a>
-    <a  href="#section-section3" data-index="2">Blog</a>
+    <a href="#section-section3" data-index="2">Blog</a>
     <a href="#section-section4" data-index="3">Playground</a>
   </div>
 </header>
@@ -132,19 +132,22 @@
     
     console.log($.fn.horizon.defaults.i);
     
-    if ($(window).width() < 620 ){
-        
-        $('header a.active').click(function(){
-            
-            $('.header-right').not(this).toggleClass('.active');
-            
-        })
-        
     
-        
-        
-        
-    }
+    //show & hide responsive nav menu 
+    $('.header-right').click(function(){
+         if ($(window).width() < 620 ) {
+             if($('.header-right').css('visibility') == 
+               'hidden'){
+               $('.header-right').css('visibility','visible');
+               
+           }
+                
+            else{
+                $('.header-right').css('visibility','hidden');
+            }
+                                        
+        }} 
+    )
     
     
 
