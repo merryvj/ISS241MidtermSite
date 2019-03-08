@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+
+<html>
+    <link rel="stylesheet" href="style.css">
+    
+
+<head>
+    <style>
+        body{
+            font-size: 1.2em;
+            line-height: 1.4em;
+        }
+        a {
+            border-bottom: solid 2px turquoise;
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:hover{
+            color: darkgrey;
+            transition: 0.2s;
+        }
+        
+        img{
+            max-width: 100%;
+            border-radius: 5px;
+            margin: auto;
+            box-shadow: 0px 2px 10px grey;        }
+        
+        .wrapper{
+            padding-top: 5%;
+            align-items: center;
+            margin: auto;
+            width: 67%;
+        }
+        
+        h3{
+            color: black;
+            font-weight: 600;
+        }
+        
+        body div{
+            padding-bottom: 1em;
+        }
+        
+        .center {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 50%;
+            }
+    
+    
+    </style>
+    
+
+</head>
+    
+<body>
+    
+    <div class="wrapper">
+        
+        <div>
+             <h1> Site features </h1>
+        </div>
+       
+        
+        <div>
+            <h3> Horizontal Scroll </h3>
+            <p>
+            
+                I used <a href="https://github.com/trgraglia/jquery.horizonScroll.js/" target="_blank"> horizonscroll.js</a> to create the left-to-right navigation of my site. 
+                
+                The plugin didn't include a way to "update" the active page (in the navigation bar) based on scroll position, so I modified its main javascript file:
+                <br>
+                <br>
+                
+                <img src="designAssets/images/Screen%20Shot%202019-02-25%20at%2012.03.03%20PM.png">
+            </p>
+        </div>
+        
+        <div>
+            <h3> Animated Text </h3>
+            <p> The typed text effect on the home page is created with <a href="https://mattboldt.com/demos/typed-js/" target="_blank"> Typed.js</a> </p>
+        </div>
+        
+        <div>
+            <h3> Modal boxes </h3>
+            <p> To avoid bringing users to a completely new page each time an assignment/blog link was clicked, I used <a href="http://fancybox.net/" target="_blank"> Fancybox.js</a> to add light-box style pop-ups for content. </p>
+        </div>
+        
+        <div>
+            <h3> Responsive mobile navigation </h3>
+            
+
+            <p> On small screen sizes, the navigation bar is initially hidden. I used this bit of jQuery to show/hide navigation links: </p>
+            
+            
+            <img class="center" src="designAssets/images/Screen%20Shot%202019-02-25%20at%2012.22.28%20PM.png">
+            
+        </div>
+        
+        
+        
+    
+    
+    
+    </div>
+    
+
+</body>
+
+
+</html>

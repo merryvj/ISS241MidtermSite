@@ -1,133 +1,266 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no">
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="masonry.pkgd.min.js"></script>
+
+
+    
+
+    
         <script src="horizonscroll.js-master/jquery.touchSwipe.js"></script>
         <script src="horizonscroll.js-master/jquery.horizonScroll.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
         <link href="horizonscroll.js-master/css/style.css" rel="stylesheet">
-        
-        <script src="main.js"></script>
+        <link href="style.css" rel="stylesheet">
+</head>
+<body>
 
-        <style>
-  
-            body{
-                font-family: 'PT Sans', sans-serif;
-            }
-            
-
-            .wrapper{
-                margin-right: auto;
-                margin-left: auto;
-                max-width: 960px;      
-            }
-            
-            .scrollContainer{
-                margin: 0 auto
-                display: block;
-                height: 500px;
-                width: 900px;
-                background: lightgrey;
-                border-radius: 5px;
-                padding: 20px;
-            }
-            
-            .card{
-                box-shadow: 0px 1px 5px #555;
-                background-color: white;
-                border-radius: 5px;
-                text-align: center;
-                padding: 30px;
-                
-            }
-            
-            .card-title{
-                font-size: 1.2em;
-            }
-            
-            .cardGrid{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-gap: 15px;
-            }
-        
-        
-        </style>
+<header  >
+  <a style="font-size: 24px" href="#section-section1" class="logo"><strong>Mary Jiang</strong> </a>
+  <div class="header-right" id="nav">
+    <a href="#section-section1" data-index="0">About</a>
+    <a href="#section-section2" data-index="1">Assignments</a>
+    <a href="#section-section3" data-index="2">Blog</a>
+    <!--<a href="#section-section4" data-index="3">Playground</a>-->
+  </div>
+</header>
     
+
+<div class="horizon-prev"><img src="designAssets/arrowhead-thin-outline-to-the-left.svg"></div>
+<div class="horizon-next"><img src="designAssets/arrow-point-to-right.svg"></div>
     
-    </head>
-    
-    <body>
-       
-        <div class="wrapper">
-             <div class="horizon-prev"> v</div>
-             <div class="horizon-next">^</div>
-            <section id="assignments"> 
-                    
-                    <div class="scrollContainer">
-                        <div class="cardGrid">
-                            <div class="card">
-                                <h2 class="card-title">
-                                    Assignment 1
-                                </h2>
 
-                            </div>
-
-                             <div class="card">
-                                <h2 class="card-title">
-                                    Assignment 1
-                                </h2>
-
-                            </div>
-
-                             <div class="card">
-                                <h2 class="card-title">
-                                    Assignment 1
-                                </h2>
-
-                            </div>
-
-                            <div class="card">
-                                <h2 class="card-title">
-                                    Assignment 1
-                                </h2>
-
-                            </div>
-                </div>
-                    
-                    
-                    </div>
-            
-            
-                </section>
-                <section id="blog">
-                    <div>
-                        <h1> HII </h1>
-                    
-                    </div>
+<!--HOME/ABOUT-->
+<section data-role="section" id="section-section1">
+    <div id="genericBox">
+        <div id="typed"></div>
+        <div >
+            <p id="aboutParagraph"> 
                 
                 
-                </section>
+                This is my site for <strong> ISS241L: Web Project Design and Development </strong> 
+                <br>
+                <br>
+            
 
-       
+                First-year student at Duke University exploring computer science, visual media, and psychology. I'm excited to learn more about using Javascript in generative media and bringing user experiences to life.
+                <a style="text-decoration: none; color: black;" data-fancybox data-type="iframe" data-src="techspecs.html" href="javascript:;">
+                    <div class="readFeatures"> Site features </div>
+                </a>
+
+            </p>
+        
+        
+        </div>
+    
+    
+    </div>
+    
+    
+</section>
+    
+<!--ASSIGNMENTS-->
+    
+<section  data-role="section" id="section-section2">
+    <div class="scrollBox" id="assignments">
+        <div class="assignmentCard">
+            <a data-fancybox data-type="iframe" data-src="oldSite/Assignment%202.html" href="javascript:;">
+                Assignment 2
+            </a>
+        </div>
+        
+        <div  class="assignmentCard">
+             <a  data-fancybox data-type="iframe" data-src="oldSite/Assignment%203.html" href="javascript:;">
+                Assignment 3
+            </a>
+        
+        </div>
+        
+        <div class="assignmentCard">
+            <a  data-fancybox data-type="iframe" data-src="oldSite/dropdown.html" href="javascript:;">
+                Assignment 4
+            </a>
+        </div>
+        
+        <div  class="assignmentCard">
+            <a   data-fancybox data-type="iframe" data-src="oldSite/Assignment%205.html" href="javascript:;">
+                Assignment 5
+            </a>
+        
+        </div>
+        
+        <div   class="assignmentCard">
+            <a  data-fancybox data-type="iframe" data-src="oldSite/Assignment6.html" href="javascript:;">
+                Assignment 6
+            </a>
+        </div>
+        
+        <div class="assignmentCard">
+            <a   data-fancybox data-type="iframe" data-src="oldSite/Assignment7.html" href="javascript:;">
+                Assignment 7
+            </a>
+        
+        
+        </div>
+        <div  class="assignmentCard">
+            <a  data-fancybox data-type="iframe" data-src="oldSite/Assignment8.html" href="javascript:;">
+                Assignment 8
+            </a>
+        
+        </div>
+        <div  class="assignmentCard">
+            <a  data-fancybox data-type="iframe" data-src="oldSite/Assignment9.html" href="javascript:;">
+                Assignment 9
+            </a>
         
         
         </div>
         
-    <script>
-        $(".section").horizon();
-    
-    </script>
-
+        <div  class="assignmentCard">
+            <a  data-fancybox data-type="iframe" data-src="oldSite/p5_firstSteps/p5_demo.html" href="javascript:;">
+                Assignment 10
+            </a>
         
+        
+        </div>
+        
+        <div  class="assignmentCard">
+            <a  data-fancybox data-type="iframe" data-src="assignments/Assignment11/Assignment11.html" href="javascript:;">
+                Assignment 11
+            </a>
+        
+        
+        </div>
+        
+        <div  class="assignmentCard">
+            <a  data-fancybox data-type="iframe" data-src="assignments/Assignment12/Assignment12.html" href="javascript:;">
+                Assignment 12
+            </a>
+        
+        
+        </div>
+        
+        
+        </div>
+
+    
+
+</section>
+    
+<!--BLOG-->
+<section   data-role="section" id="section-section3">
+    <div class="scrollBox" id = "blogBox">
+        <div  class="blogCard">
+            <h3> FEBRUARY 2, 2019 </h3>
+            <h2> Assignment 8: Plugin Research </h2> 
+            <a data-fancybox data-type="iframe" data-src="oldSite/Assignment8.html" href="javascript:;">
+                <div class="readMore"> READ</div>
+
+            </a>
+        </div>
+
+    
+    
+        </div>
+                
     
     
     
-    </body>
+</section>
+
+    <!--
+<section data-role="section" id="section-section4">
+    <div class="scrollBox">
+        
+        
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+            <div class="grid-item">
+                <img src="designAssets/images/365moji_about4-crop-u645.jpg">
+            
+            </div>
+            <div class="grid-item">
+                <img src="designAssets/images/weather.jpg">
+            
+            </div>
+            
+            <div class="grid-item"> <img src="designAssets/images/screen%20shot%202018-07-14%20at%20122212%20pm.jpg"></div>
+        </div>
+        
+        
+        
+
+    
+    
+    
+    </div>
+    
+    
+    
+    
+</section>
+
+-->
+
+<footer data-role="footer" id="footer">
+    
+    <a href="mailto: mvjiang@gmail.com"> Send an email </a> |
+
+    <a href="https://www.maryjiang.com"> maryjiang.com</a>
+    
+    😊
+    
+    </footer>
+  
+<script type="text/javascript">
+    $('section').horizon({swipe: false});
+    
+    console.log($.fn.horizon.defaults.i);
+    
+    
+    //show & hide responsive nav menu 
+    $('.header-right').click(function(){
+         if ($(window).width() < 620 ) {
+             if($('.header-right').css('visibility') == 
+               'hidden'){
+               $('.header-right').css('visibility','visible');   
+           }
+                
+            else{
+                
+                $('.header-right').css('visibility','hidden');
+            }
+                                        
+        }} 
+    )
+  
     
     
 
+</script>
+    
+
+    
+<script>
+    var typed = new Typed('#typed', {
+                strings: ['Design', 'Develop'],
+                typeSpeed: 50,
+                backSpeed: 50,
+                backDelay: 500,
+                loop: true,
+                showCursor: false,
+                 
+              });
+    
+    
+</script>
+
+</body>
 </html>

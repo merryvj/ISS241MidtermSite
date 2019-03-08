@@ -136,7 +136,7 @@
 
         console.log('Scroll to: ' + index);
         
-        //TRYING TO GET ACTIVE LINK
+        //UPDATE ACTIVE LINK
         $("#nav").children("a").each(function(){
             $(this).removeClass('active');
         })
